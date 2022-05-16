@@ -23,7 +23,7 @@ import { ProductModule } from './products/product.module';
         password: configService.get("DB_PASS"),
         database: configService.get("DB_DATABASE"),
         entities: [join(__dirname, "**/**.entity{.ts,.js}")],
-        synchronize: configService.get<boolean>("BD_SYNCHRONIZE"),
+        synchronize: true,
         logging: configService.get<boolean>("DB_LOGGING"),
         // namingStrategy: new SnakeNamingStrategy(),
         // extra: {
