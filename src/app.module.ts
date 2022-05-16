@@ -36,8 +36,7 @@ import { ProductModule } from './products/product.module';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       sortSchema: true,
-    }),
-
+    })
   ]
 })
 export class AppModule { }
